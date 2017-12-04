@@ -1,0 +1,148 @@
+body{
+	min-width: 1200px;
+}
+.bg{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+.yellow{
+	background: #fbee4e;
+}
+.blue{
+	background: #2a1046;
+}
+.index_header{
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: .4rem;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	margin-left: .4rem;
+}
+.nav{
+	position: absolute;
+    right: .4rem;
+    font-size: .09rem;
+    color: #aaaaaa;
+}
+.nav li{
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav li:hover{
+	color: #2a1046;
+}
+.nav li .english{
+	font-size: 12px;
+}
+.nav .last{
+	margin-right: 0;
+}
+
+.section_content{
+	left: .4rem;
+	right: .4rem;
+	top: .4rem;
+	bottom: .4rem;
+	position: absolute
+}
+
+.section_content img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.section_content .section2{
+	top: 29%;
+	left: .2rem;
+	line-height: .4rem;
+	position: absolute;
+}
+.section_content p{
+	font-size: .23rem;
+	color: #fff;
+}
+.section_content .section2_p1{
+	top: 27%;
+	left: .2rem;
+}
+.section_content .section2_p2{
+	top: 40%;
+	left: .2rem;
+}
+.section_content .section2_p3{
+	top: 55%;
+	left: .2rem;
+}
+.section1_font{
+	position: absolute;
+	top: 50%;
+	left: 2%;
+}
+.more{
+	width: .7rem;
+	height: .18rem;
+	border: 2px solid #fff;
+	font-size: .12rem !important;
+	text-align: center;
+	line-height: .16rem;
+	color: #fff !important;
+	position: absolute;
+	cursor: pointer;
+	margin-top: .15rem;
+}
+.bottom{
+	padding: 25px 10%;
+	position: absolute;
+	bottom: 0;
+	background: #fbee4e;
+	width: 80%;
+}
+.oinput{
+	position: absolute;
+    width: 80%;
+    height: 2rem;
+    left: 10%;
+    bottom: 1.3rem;
+    border: 1px solid #2a1046;
+}
+.oinput textarea{
+	width: 80%;
+	font-size: 16px;
+	height: 1.6rem;
+	text-indent: 20px;
+	border: none;
+	outline: none;
+	
+}
+.bottom .left{
+	display: inline-block;
+}
+.bottom .left p{
+	line-height: .25rem;
+    font-size: .13rem;
+    color: #000;
+	
+}
+.bottom .right{
+	display: flex;
+	align-items: center;
+}
+.bottom .right img{
+	width: 100px;
+	
+}
+.swiper-pagination-bullet{
+	width: 15px;
+    height: 15px;
+}
+.swiper-pagination-bullet-active{
+	background: #faec5c;
+}
