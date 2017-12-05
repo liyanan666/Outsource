@@ -12,19 +12,18 @@ $(function() {
 			console.log(1)
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
 				if(block11Height>0 && block12Width<=0 && block13Height<=0 && block14Width<=0){
-					console.log(1)
 					block11Height -= 100;
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height >=$(".block1").height() && block13Height<=0 && block14Width<=0 && block12Width>=0 ){
-					console.log(2)
+					
 					block12Width-=100;
 					$("#block22").css({"height":"100%","background":"#fbee4e","width":block12Width+"px"})
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=0 && block14Width<=0 ){
-					console.log(3)
+				
 					block13Height-=100;
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
-					console.log(4)
+					
 					block14Width-=100;
 					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}
