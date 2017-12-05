@@ -1,9 +1,63 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="c" width="500" height="600"></canvas>
+<script>
+    var canvas = document.getElementById('c');
+    canvas.style.background = '#eee';
+    var ctx = canvas.getContext('2d');
+
+    function Block(x,y,wh,x1,y1,col) {
+        this.c = ctx;
+        this.x = x;
+        this.y = y;
+        this.w = wh;
+        this.h = wh; 
+        this.x1 = x1;
+        this.y1 = y1;
+        this.col = col;
+        this.time = 1000;
+        this.id = 0;
+        this.draw = function () {
+            var _this = this;
+            _this.id = setInterval(function () {
+                _this.time -= 10;
+                if (_this.time <=0 ){                    
+                	clearInterval(_this.id);
+                    _this.c.clearRect(_this.x,_this.y,_this.w,_this.h);
+                    _this.w = _this.h = 0;
+                }
+                _this.x += _this.x1;
+                _this.y += _this.y1;
+                _this.c.fillStyle = _this.col,
+                _this.c.clearRect(_this.x - _this.x1,_this.y-_this.y1,_this.w,_this.h);
+
+                if (_this.x >= canvas.width - _this.w || _this.x <= 0){
+                    _this.x1 = -_this.x1;
+                }
+                if (_this.y >= canvas.height - _this.h || _this.y <= 0){
+                    _this.y1 = -_this.y1;
+                }
+                _this.c.fillRect(_this.x,_this.y, _this.w, _this.h);
+
+            },10);
+        };
+    }
+  var a = 1;
+    canvas.onmousemove = function (e) {
+        var x =  e.offsetX;
+        var y =  e.offsetY;
+        if (a++ % 6 == 0){
+            var b = new Block(randomNumber(x-10,x+10),randomNumber(y-10,y+10),randomNumber(5,30),randomNumber(-5,5),randomNumber(-5,5),'rgb('+randomNumber(0,255)+','+randomNumber(0,255)+','+randomNumber(0,255)+')');
+            b.draw();
+        }
+    }
+    function randomNumber(a,b) {
+        return parseInt(Math.random() * (b-a)) + a;
+    }
+    </script>
+</body>
 </html>

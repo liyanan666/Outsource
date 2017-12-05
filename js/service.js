@@ -1,38 +1,68 @@
 $(function() {
-	var oC = document.getElementById('ocanvas');
-	var oGC = oC.getContext('2d');
-	var canWidth = oC.width;
-	var canHeight = oC.height;
-	var scrollX = 0;
-	var scrollY = 0;
-	oGC.lineWidth = 30;
-	
-	
-
-//	oGC.fillRect(0, 0, 15, 15);
-
+	var block11Height = 0;
+	var block12Width = 0;
+	var block13Height = 0;
+	var block14Width = 0;
 	var scrollFunc = function(e) {
-
+//		if(document.body.clientHeight + document.body.scrollTop >= document.documentElement.offsetHeight ){
+//			return;
+//		}
 		e = e || window.event;
 		if(e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件 
+			console.log(1)
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
-				console.log("shang");
-				if(scrollX<oC.width && scrollY==0){
-					scrollX-=15;
-				}else if(scrollX>oC.width){
-					scrollY-=15;
+				if(block11Height>0 && block12Width<=0 && block13Height<=0 && block14Width<=0){
+					console.log(1)
+					block11Height -= 100;
+					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"})
+				}else if(block11Height >=$(".block1").height() && block13Height<=0 && block14Width<=0 && block12Width>=0 ){
+					console.log(2)
+					block12Width-=100;
+					$("#block22").css({"height":"100%","background":"#fbee4e","width":block12Width+"px"})
+				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=0 && block14Width<=0 ){
+					console.log(3)
+					block13Height-=100;
+					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
+				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
+					console.log(4)
+					block14Width-=100;
+					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}
-				
-				fillblock(scrollX,scrollY);
 			}
 			if(e.wheelDelta < 0) { //当滑轮向下滚动时
-				console.log("xia")
-				if(scrollX<oC.width && scrollY==0){
-					scrollX+=15;
-				}else if(scrollX>=oC.width){
-					scrollY+=15;
+				
+				if(block11Height <$(".block1").height() && block12Width<$(".block2").width()){
+//					console.log(block11Height,$(".block1").height())
+					console.log("xia");	
+					if($(".block1").height()-block11Height<100){
+						block11Height = $(".block1").height();
+					}else{
+						block11Height += 100;
+					}
+					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"});
+				}else if(block11Height ==$(".block1").height() && block12Width<$(".block2").width()){
+					if($(".block2").width()-block12Width<100){
+						block12Width = $(".block2").width();
+					}else{
+						block12Width += 100;
+					}
+					$("#block22").css({"height":"100%","background":"#fbee4e","width":block12Width+"px"})
+				}else if(block12Width==$(".block2").width() && block13Height<$(".block3").height()){
+					if($(".block3").height()-block13Height<100){
+						block13Height = $(".block3").height();
+					}else{
+						block13Height += 100;
+					}
+					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
+				}else if(block13Height>=$(".block3").height() && block14Width<=$(".block4").width()){
+					if($(".block4").width()-block14Width<100){
+						block14Width = $(".block4").width();
+					}else{
+						block14Width += 100;
+					}
+					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}
-				fillblock(scrollX,scrollY);
+				
 			}
 		} else if(e.detail) { //Firefox滑轮事件
 			if(e.detail > 0) { //当滑轮向上滚动时
@@ -42,35 +72,7 @@ $(function() {
 		}
 	}
 	
-	function fillblock(scrollX,scrollY){
-		oGC.clearRect(0,0,oC.width,oC.height);
-		if(scrollX<canWidth && scrollY<canHeight){
-			console.log(1)
-			oGC.beginPath();
-			oGC.moveTo(0,0);
-			oGC.lineTo(scrollX,0);
-			oGC.closePath();
-			oGC.stroke();
-			oGC.save()
-		}else if(scrollX>=canWidth && scrollY<canHeight){
-			oGC.beginPath();
-			oGC.moveTo(oC.width,0);
-			oGC.lineTo(oC.width,scrollY);
-			oGC.closePath();
-			oGC.stroke();
-			oGC.save()
-		}
-//		if(scrollX>=canWidth){
-//			oGC.lineTo(scrollX,scrollY);
-//			oGC.stroke();
-////			oGC.fillRect(0,0,15,scroll);
-//		}else if(scrollX<canWidth){
-////			oGC.fillRect(0,0,scroll,15);
-//			oGC.lineTo(scrollX,scrollY);
-//			oGC.stroke();
-//		}
-	}
-	
+
 	//给页面绑定滑轮滚动事件
 	if(document.addEventListener) { //firefox
 		document.addEventListener('DOMMouseScroll', scrollFunc, false);
