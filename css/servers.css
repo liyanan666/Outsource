@@ -13,7 +13,6 @@
 	background: #2b0f46;
 	bottom: .4rem;
 	top: .4rem;
-	z-index: 100;
 }
 .block2{
 	position: fixed;
@@ -21,7 +20,6 @@
 	height: .4rem;
 	width: 100%;
 	background: #2b0f46;
-	z-index: 100;
 }
 .block3{
 	position: fixed;
@@ -29,7 +27,6 @@
 	top: .4rem;
 	width: .4rem;
 	background: #2b0f46;
-	z-index: 100;
 }
 .block4{
 	position: fixed;
@@ -43,8 +40,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: ease .5s ;
-	z-index: 1000;
+	transition: cubic-bezier(0.39, 0.58, 1, 1.4) .1s ;
 }
 #block22{
 	right: 0;
@@ -78,8 +74,8 @@
 	float: left;
 	font-size: .12rem;
 }
-#dowebok .case_nav li .active{
-	color: #2a1046;
+#dowebok .active{
+	color: #2a1046 !important;
 }
 #dowebok .case_nav .nav_title{
 	font-weight: bold;
