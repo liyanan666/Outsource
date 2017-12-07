@@ -5,54 +5,87 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<link rel="stylesheet" type="text/css" href="fullpage/jquery.fullpage.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/styleret.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="css/servers.css"/>
-		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-		<script src="fullpage/jquery.fullpage.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/styleret.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/servers.css"/>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../fullpage/jquery.fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/adaptive.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 		<div id="header" class="index_header clearfix" style="z-index: 300;">
 			<div class="fl logo">
-				<img src="img/logo1.png"/>
+				<img src="../img/logo1.png"/>
 			</div>
-			<ul class="nav fr clearfix">
+			<ul class="nav fr clearfix introduction_nav">
 				<li>
-					<div>首页</div>
-					<div class="english">HOME</div>
+					<a href="../index.html">
+						<div>首页</div>
+						<div class="english">HOME</div>
+					</a>
+					
 				</li>
 				<li>
-					<div>公司简介</div>
-					<div class="english">SYNOPSIS</div>
+					<a href="introduction.html">
+						<div>公司简介</div>
+						<div class="english">SYNOPSIS</div>
+					</a>
+					
 				</li>
 				<li>
-					<div>公司服务</div>
-					<div class="english">SERVICES</div>
+					<a href="service.html">
+						<div>公司服务</div>
+						<div class="english">SERVICES</div>
+					</a>
+					
 				</li>
 				<li>
-					<div>商业案例</div>
-					<div class="english">CASE</div>
+					<a href="anli.html" class="active">
+						<div>商业案例</div>
+						<div class="english">CASE</div>
+					</a>
 				</li>
 				<li class="last">
-					<div>关于我们</div>
-					<div class="english">ABOUT US</div>
+					<a href="../index.html">
+						<div>关于我们</div>
+						<div class="english">ABOUT US</div>
+					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="block">
 			<div class="block1">
-				<div class="block_child" id="block11"></div>
+				<img class="block_font" src="../img/aboutus_yellow.png"/>
+				<img class="block_font" src="../img/font.png" style="z-index: 3;"/>
+				<div class="block_child" id="block11">
+					<div class="block_child" id="block111">
+						
+					</div>
+				</div>
 			</div>
 			<div class="block2">
-				<div class="block_child" id="block22"></div>
+				<div class="block_child" id="block22">
+					<div class="block_child" id="block222" style="right: 0;left: auto;">
+					
+					</div>
+				</div>
 			</div>
 			<div class="block3">
-				<div class="block_child" id="block33"></div>
+				<img class="block_font" src="../img/aboutus_yellow.png" style="left: .12rem;"/>
+				<img class="block_font" src="../img/font.png" style="left: .12rem;z-index: 3;"/>
+				<div class="block_child" id="block33">
+					<div class="block_child" id="block333" style="bottom: 0;top: auto;">
+					
+					</div>
+				</div>
 			</div>
 			<div class="block4" style="background: #2a1046;">
-				<div class="block_child" id="block44"></div>
+				<div class="block_child" id="block44">
+					<div class="block_child" id="block444">
+					
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="dowebok">
@@ -75,7 +108,7 @@
 		        		<p class="nav_english">INDUSTRY CLASSIFICATION</p>
 		        	</li>
 		        </ul>
-		        <div class="hide">
+		        <div class="show">
 		        	 <div class="case_content">
 			        	<div class="case_content_title">
 			        		<p class="content_title">品牌设计</p>
@@ -83,19 +116,19 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/1.png"/>
+			        			<img src="../img/1.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/2.png"/>
+			        			<img src="../img/2.png"/>
 			        			<div class="dialog"> </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/3.png"/>
+			        			<img src="../img/3.png"/>
 			        			<div class="dialog"> </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/4.png"/>
+			        			<img src="../img/4.png"/>
 			        			<div class="dialog"> </div>
 			        		</li>
 			        	</ul>
@@ -119,19 +152,19 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/5.png"/>
+			        			<img src="../img/5.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/6.png"/>
+			        			<img src="../img/6.png"/>
 			        			<div class="dialog">游戏开发设计</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/7.png"/>
+			        			<img src="../img/7.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/8.png"/>
+			        			<img src="../img/8.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        	</ul>
@@ -143,23 +176,23 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/9.png"/>
+			        			<img src="../img/9.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/10.png"/>
+			        			<img src="../img/10.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/11.png"/>
+			        			<img src="../img/11.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/12.png"/>
+			        			<img src="../img/12.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        		<li>
-			        			<img src="img/13.png"/>
+			        			<img src="../img/13.png"/>
 			        			<div class="dialog"></div>
 			        		</li>
 			        	</ul>
@@ -186,23 +219,23 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/xinxi1.png"/>
+			        			<img src="../img/xinxi1.png"/>
 			        			<div class="dialog">图标设计</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/xinxi2.png"/>
+			        			<img src="../img/xinxi2.png"/>
 			        			<div class="dialog"> 地图设计</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/xinxi3.png"/>
+			        			<img src="../img/xinxi3.png"/>
 			        			<div class="dialog">展览及导视设计  </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/xinxi4.png"/>
+			        			<img src="../img/xinxi4.png"/>
 			        			<div class="dialog">数据新闻  </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/xinxi5.png"/>
+			        			<img src="../img/xinxi5.png"/>
 			        			<div class="dialog">年会报告设计   </div>
 			        		</li>
 			        	</ul>
@@ -214,11 +247,11 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/xinxi6.png"/>
+			        			<img src="../img/xinxi6.png"/>
 			        			<div class="dialog qidai">移动HTML5动画设计 </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/xinxi7.png"/>
+			        			<img src="../img/xinxi7.png"/>
 			        			<div class="dialog qidai">声音设计 </div>
 			        		</li>
 			        		
@@ -231,15 +264,15 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/8.png"/>
+			        			<img src="../img/8.png"/>
 			        			<div class="dialog">界面设计</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/9.png"/>
+			        			<img src="../img/9.png"/>
 			        			<div class="dialog">网站设计</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/10.png"/>
+			        			<img src="../img/10.png"/>
 			        			<div class="dialog">系统设计</div>
 			        		</li>
 			        		
@@ -267,15 +300,15 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/erwei1.png"/>
+			        			<img src="../img/erwei1.png"/>
 			        			<div class="dialog">漫画插画设计 </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei2.png"/>
+			        			<img src="../img/erwei2.png"/>
 			        			<div class="dialog">卡通形象设计 </div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei3.png"/>
+			        			<img src="../img/erwei3.png"/>
 			        			<div class="dialog">二维动画设计 </div>
 			        		</li>
 			        	</ul>
@@ -287,11 +320,11 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/erwei4.png"/>
+			        			<img src="../img/erwei4.png"/>
 			        			<div class="dialog">产品演示动画</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei5.png"/>
+			        			<img src="../img/erwei5.png"/>
 			        			<div class="dialog">三维动画设计</div>
 			        		</li>
 			        	</ul>
@@ -303,11 +336,11 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/erwei6.png"/>
+			        			<img src="../img/erwei6.png"/>
 			        			<div class="dialog">FLASH动画制作</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei7.png"/>
+			        			<img src="../img/erwei7.png"/>
 			        			<div class="dialog">游戏开发设计</div>
 			        		</li>
 			        	</ul>
@@ -319,15 +352,15 @@
 			        	</div>
 			        	<ul class="content_list clearfix">
 			        		<li>
-			        			<img src="img/erwei9.png"/>
+			        			<img src="../img/erwei9.png"/>
 			        			<div class="dialog">微电影拍摄</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei8.png"/>
+			        			<img src="../img/erwei8.png"/>
 			        			<div class="dialog">后期剪辑包装</div>
 			        		</li>
 			        		<li>
-			        			<img src="img/erwei10.png"/>
+			        			<img src="../img/erwei10.png"/>
 			        			<div class="dialog">影视广告设计</div>
 			        		</li>
 			        	</ul>
@@ -335,7 +368,7 @@
 			         
 			     </div>   
 			        
-			        <div>
+			        <div class="hide">
 			        	<div class="case_content">
 				        	<div class="case_content_title">
 				        		<p class="content_title">信息可视化设计</p>
@@ -343,19 +376,44 @@
 				        	</div>
 				        	<ul class="fenleilist clearfix">
 				        		<li>
-				        			<img src="img/manhua1.png"/>
+				        			<img src="../img/manhua1.png"/>
 				        		</li>
 				        		<li>
-				        			<img src="img/manhua2.png"/>
+				        			<img src="../img/manhua2.png"/>
 				        		</li>
 				        		<li>
-				        			<img src="img/manhua3.png"/>
+				        			<img src="../img/manhua3.png"/>
 				        		</li>
 				        		<li>
-				        			<img src="img/manhua4.png"/>
+				        			<img src="../img/manhua4.png"/>
 				        		</li>
 				        		<li>
-				        			<img src="img/manhua5.png"/>
+				        			<img src="../img/manhua5.png"/>
+				        		</li>
+				        		
+				        		<li>
+				        			<img src="../img/manhua6.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua7.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua8.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua9.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua10.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua11.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua12.png"/>
+				        		</li>
+				        		<li>
+				        			<img src="../img/manhua13.png"/>
 				        		</li>
 				        	</ul>
 				        </div>
@@ -373,7 +431,7 @@
 		        <h3>第四屏</h3>
 		    </div>-->
 		</div>
-		<script src="js/service.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/anli.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

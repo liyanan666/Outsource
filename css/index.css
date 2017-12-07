@@ -17,20 +17,24 @@ body{
 	position: fixed;
 	z-index: 100;
 	width: 100%;
-	height: .4rem;
+	height: 80px;
 	display: flex;
 	align-items: center;
 }
 .logo{
 	z-index: 200;
-	margin-left: .4rem;
+	margin-left: 80px;
 }
 .nav{
 	position: absolute;
     right: .4rem;
-    font-size: .09rem;
+    font-size: 20px;
     color: #aaaaaa;
     z-index: 200;
+}
+
+.nav .active{
+	color: #fbee4e;
 }
 .nav li{
 	float: left;
@@ -38,8 +42,17 @@ body{
 	text-align: center;
 	cursor: pointer;
 }
+.nav li a{
+	color: #aaaaaa;
+}
 .nav li:hover{
 	color: #2a1046;
+}
+.introduction_nav li:hover{
+	color: #fbee4e;
+}
+.introduction_nav li a:hover{
+	color: #fbee4e;
 }
 .nav li .english{
 	font-size: 12px;
@@ -49,12 +62,13 @@ body{
 }
 
 .section_content{
-	left: .4rem;
-	right: .4rem;
-	top: .4rem;
-	bottom: .4rem;
-	position: absolute
+	left: 80px;
+	right: 80px;
+	top: 80px;
+	bottom: 80px;
+	position: absolute;
 }
+
 
 .section_content img{
 	width: 100%;
@@ -64,7 +78,7 @@ body{
 .section_content .section2{
 	top: 29%;
 	left: .2rem;
-	line-height: .4rem;
+	line-height: 80px;
 	position: absolute;
 }
 .section_content p{
@@ -162,4 +176,39 @@ body{
 }
 .fenleilist li img{
 	width: 100%;
+}
+.introduction_content p,.introduction_content h1{
+	color: #2a1046;
+}
+.header{
+	margin-top: 70px;
+	text-align: center;
+}
+.header .title{
+	font-size: 30px;
+	line-height: 50px;
+}
+.header .english{
+	font-size: 22px;
+}
+.header .yellow_line{
+	width: 160px;
+	height: 2px;
+	background: #fbee4e;
+	margin: 0 auto;
+}
+.introduction_content .content{
+	margin: 80px;
+}
+.introduction_content .content p{
+	font-size: 22px !important;
+	line-height: 35px;
+}
+
+.services_content{
+	left: 80px;
+	right: 80px;
+	top: 80px;
+	bottom: 80px;
+	position: fixed;
 }

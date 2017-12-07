@@ -9,28 +9,30 @@
 .block1{
 	position: fixed;
 	right: 0;
-	width: .4rem;
-	background: #2b0f46;
-	bottom: .4rem;
-	top: .4rem;
+	width: 80px;
+	background: #2a1046;
+	bottom: 80px;
+	top: 80px;
 }
 .block2{
 	position: fixed;
 	bottom: 0;
-	height: .4rem;
+	height: 80px;
 	width: 100%;
-	background: #2b0f46;
+	background: #2a1046;
+	z-index: 2;
 }
 .block3{
 	position: fixed;
-	bottom: 0.4rem;
-	top: .4rem;
-	width: .4rem;
-	background: #2b0f46;
+	bottom: 80px;
+	top: 80px;
+	width: 80px;
+	background: #2a1046;
+	z-index: 2;
 }
 .block4{
 	position: fixed;
-	height: .4rem;
+	height: 80px;
 	width: 100%;
 	top: 0;
 	z-index: 100;
@@ -41,6 +43,12 @@
 	top: 0;
 	left: 0;
 	transition: cubic-bezier(0.39, 0.58, 1, 1.4) .1s ;
+}
+.block_font{
+	position: fixed;
+	top: 180px;
+	right: .12rem;
+	z-index: 3;
 }
 #block22{
 	right: 0;
@@ -64,25 +72,27 @@
 }
 #dowebok .case_nav{
 	display: flex;
-	
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding-bottom: .15rem;
 	border-bottom: 1px solid #dddddd;
 }
 #dowebok .case_nav li{
 	color: #fbee4e;
 	float: left;
-	font-size: .12rem;
+	font-size: 24px;
+	cursor: pointer;
+	flex: 1;
 }
 #dowebok .active{
 	color: #2a1046 !important;
+	transition: .3s;
 }
 #dowebok .case_nav .nav_title{
 	font-weight: bold;
 	line-height: .2rem;
 }
 #dowebok .case_nav .nav_english{
-	font-size: .08rem;
+	font-size: 18px;
 }
 .case_content{
 	
@@ -122,4 +132,44 @@
 	font-size: 24px;
 	color: #fff;
 	
+}
+.services_contentlist{
+	display: flex;
+	margin: 40;
+}
+.services_contentlist li{
+	float: left;
+	flex: 1;
+	text-align: center;
+}
+.services_contentlist li .list_icon{
+	width: 150px;
+}
+.services_contentlist li .list_font{
+	margin-top: 30px;
+	font-size: 24px;
+	line-height: 50px;
+}
+.services_contentlist li .list_fontenglist{
+	font-size: 16px;
+	line-height: 40px;
+}
+.services_title{
+	margin-top: 40px;
+	margin-bottom: 80px;
+	font-size: 28px;
+	text-align: center;
+	color: #2a1046;
+}
+.services_contentlist li .list_more{
+	width: 150px;
+	height: 35px;
+	font-size: 16px;
+	margin: 70px auto 0 auto;
+	border: 1px solid #2a1046;
+	line-height: 33px;
+	color: #2a1046;
+}
+.services_content .liucheng{
+	margin: 0 auto;
 }
