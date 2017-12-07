@@ -48,6 +48,13 @@ body{
 .nav li:hover{
 	color: #2a1046;
 }
+.index_nav a:hover,.index_nav .active{
+	color: #2a1046 !important;
+}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin: 20px;
+}
+
 .introduction_nav li:hover{
 	color: #fbee4e;
 }
@@ -99,7 +106,7 @@ body{
 }
 .section1_font{
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 2%;
 }
 .more{
@@ -124,15 +131,15 @@ body{
 .oinput{
 	position: absolute;
     width: 80%;
-    height: 2rem;
+    height: 400px;
     left: 10%;
-    bottom: 1.3rem;
+    bottom: 290px;
     border: 1px solid #2a1046;
 }
 .oinput textarea{
 	width: 80%;
 	font-size: 16px;
-	height: 1.6rem;
+	height: 270px;
 	text-indent: 20px;
 	border: none;
 	outline: none;
@@ -142,17 +149,18 @@ body{
 	display: inline-block;
 }
 .bottom .left p{
-	line-height: .25rem;
-    font-size: .13rem;
+	line-height: 50px;
+    font-size: 22px;
     color: #000;
 	
 }
 .bottom .right{
 	display: flex;
 	align-items: center;
+	margin-top: 25px;
 }
 .bottom .right img{
-	width: 100px;
+	width: 150px;
 	
 }
 .swiper-pagination-bullet{
@@ -198,7 +206,45 @@ body{
 	margin: 0 auto;
 }
 .introduction_content .content{
-	margin: 80px;
+	margin: 80px 80px 50px 80px;
+}
+.contents{
+	text-align: center;
+	width: 600px;
+	margin: 50px auto !important;
+}
+.down_head .icon{
+	width: 100px;
+}
+.hetong{
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	line-height: 40px;
+	border: 1px solid #292ef9;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #292ef9;
+}
+.down_mid{
+	
+}
+.down_mid .mid_title{
+	font-size: 30px !important;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #000000;
+	margin-top: 30px;
+}
+.down_mid .mid_info{
+	font-size: 16px;
+	text-align: left;
+	line-height: 25px;
+	margin-top: 40px;
+}
+.down_head .hetong img{
+	width: 20px;
+	vertical-align: middle;
 }
 .introduction_content .content p{
 	font-size: 22px !important;
