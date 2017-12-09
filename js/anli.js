@@ -7,6 +7,7 @@ $(function() {
 	var block133Height = 0;
 	var block14Width = 0;
 	var block144Width = 0;
+	var host = location.hash;
 	var scrollFunc = function(e) {
 		if(document.body.clientHeight + document.body.scrollTop >= document.documentElement.offsetHeight ){
 			return;
@@ -141,5 +142,15 @@ $(function() {
 		$(".case_nav").siblings("div").fadeOut();
 		$(".case_nav").siblings("div").eq($(this).index()).fadeIn();
 	});
+	console.log(host);
+	if(host == '#view'){
+		$(".case_nav").find("li").eq(0).trigger("click");
+	}
+	if(host == '#animate'){
+		$(".case_nav").find("li").eq(2).trigger("click");
+	}
+	if(host == '#info'){
+		$(".case_nav").find("li").eq(1).trigger("click");
+	}
 
 });
