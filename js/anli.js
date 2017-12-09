@@ -17,6 +17,10 @@ $(function() {
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
 				if(block144Width>0 && block133Height>0 && block122Width>0){
 					block144Width -= 55;
+					if(block144Width<111){
+						$("#logo1").hide();
+						$("#logo2").show();
+					}
 					$("#block444").css({"height":"100%","background":"#2a1046","width":block144Width+"px"});
 				}else if(block133Height>0 && block144Width<=0){
 					block133Height-=55;
@@ -41,6 +45,10 @@ $(function() {
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
 					
 					block14Width-=55;
+					if(block14Width<111){
+						$("#logo1").show();
+						$("#logo2").hide();
+					}
 					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}
 			}
@@ -75,6 +83,8 @@ $(function() {
 					}else{
 						block14Width += 55;
 					}
+					$("#logo1").hide();
+					$("#logo2").show();
 					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}else if(block14Width==$(".block4").width() && block111Height<$("#block11").height()){
 					if($("#block11").height()-block111Height<55){
@@ -103,6 +113,8 @@ $(function() {
 					}else{
 						block144Width += 55;
 					}
+					$("#logo1").show();
+					$("#logo2").hide();
 					$("#block444").css({"height":"100%","background":"#2a1046","width":block144Width+"px"});
 				}
 				

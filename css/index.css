@@ -17,30 +17,38 @@ body{
 	position: fixed;
 	z-index: 100;
 	width: 100%;
-	height: 80px;
+	height: 62px;
 	display: flex;
 	align-items: center;
 }
 .logo{
 	z-index: 200;
 	margin-left: 80px;
+	position: relative;
 }
+
 .nav{
 	position: absolute;
     right: .4rem;
-    font-size: 20px;
+    font-size: 18px;
     color: #aaaaaa;
     z-index: 200;
 }
-
 .nav .active{
-	color: #fbee4e;
+	border-bottom: 3px solid #2a1046;
+}
+.nav .active a{
+	color: #2a1046;
+	
 }
 .nav li{
 	float: left;
-	margin-right: 30px;
-	text-align: center;
-	cursor: pointer;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer;
+    height: 65px;
+    display: flex;
+    align-items: center;
 }
 .nav li a{
 	color: #aaaaaa;
@@ -61,6 +69,14 @@ body{
 .introduction_nav li a:hover{
 	color: #fbee4e;
 }
+.introduction_nav .introactive{
+	color: #fbee4e;
+	border-bottom: 3px solid #fbee4e;
+}
+.introduction_nav .introactive a{
+	color: #fbee4e;
+	
+}
 .nav li .english{
 	font-size: 12px;
 }
@@ -69,10 +85,10 @@ body{
 }
 
 .section_content{
-	left: 80px;
-	right: 80px;
-	top: 80px;
-	bottom: 80px;
+	left: 65px;
+	right: 65px;
+	top: 65px;
+	bottom: 65px;
 	position: absolute;
 }
 
@@ -85,11 +101,11 @@ body{
 .section_content .section2{
 	top: 29%;
 	left: .2rem;
-	line-height: 80px;
+	line-height: 70px;
 	position: absolute;
 }
 .section_content p{
-	font-size: .23rem;
+	font-size: 35px;
 	color: #fff;
 }
 .section_content .section2_p1{
@@ -127,19 +143,20 @@ body{
 	bottom: 0;
 	background: #fbee4e;
 	width: 80%;
+	height: 130px;
 }
 .oinput{
 	position: absolute;
     width: 80%;
-    height: 400px;
+    height: 350px;
     left: 10%;
-    bottom: 290px;
+    bottom: 200px;
     border: 1px solid #2a1046;
 }
 .oinput textarea{
-	width: 80%;
+	width: 100%;
 	font-size: 16px;
-	height: 270px;
+	height: 300px;
 	text-indent: 20px;
 	border: none;
 	outline: none;
@@ -149,18 +166,18 @@ body{
 	display: inline-block;
 }
 .bottom .left p{
-	line-height: 50px;
-    font-size: 22px;
+	line-height: 35px;
+    font-size: 18px;
     color: #000;
 	
 }
 .bottom .right{
 	display: flex;
 	align-items: center;
-	margin-top: 25px;
+	margin-top: 15px;
 }
 .bottom .right img{
-	width: 150px;
+	width: 120px;
 	
 }
 .swiper-pagination-bullet{
@@ -185,11 +202,15 @@ body{
 .fenleilist li img{
 	width: 100%;
 }
+.introduction_content{
+	margin: 120px 65px 100px 65px;
+	
+}
 .introduction_content p,.introduction_content h1{
 	color: #2a1046;
 }
 .header{
-	margin-top: 70px;
+	margin-top: 50px;
 	text-align: center;
 }
 .header .title{
@@ -206,11 +227,11 @@ body{
 	margin: 0 auto;
 }
 .introduction_content .content{
-	margin: 80px 80px 50px 80px;
+	margin: 50px 80px 50px 80px;
 }
 .contents{
 	text-align: center;
-	width: 600px;
+	width: 700px;
 	margin: 50px auto !important;
 }
 .down_head .icon{
@@ -225,9 +246,18 @@ body{
 	margin: 0 auto;
 	font-size: 16px;
 	color: #292ef9;
+	
+}
+#viewhetong{
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 .down_mid{
-	
+	height: 229px;
+    overflow: hidden;
+    position: relative;
 }
 .down_mid .mid_title{
 	font-size: 30px !important;
@@ -252,9 +282,16 @@ body{
 }
 
 .services_content{
-	left: 80px;
-	right: 80px;
-	top: 80px;
-	bottom: 80px;
+	left: 65px;
+	right: 65px;
+	top: 65px;
+	bottom: 65px;
 	position: fixed;
+}
+.services_content .content{
+	margin: 65px;
+}
+.services_content .content p{
+	font-size:20px ;
+	line-height: 35px;
 }

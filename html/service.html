@@ -15,7 +15,8 @@
 	<body>
 		<div class="index_header clearfix" style="z-index: 200;">
 			<div class="fl logo">
-				<img src="../img/logo1.png"/>
+				<img id="logo1" src="../img/logo1.png"/>
+				<img id="logo2" src="../img/logo.png" style="display: none;"/>
 			</div>
 			<ul class="nav fr clearfix introduction_nav">
 				<li>
@@ -31,8 +32,8 @@
 						<div class="english">SYNOPSIS</div>
 					</a>
 				</li>
-				<li>
-					<a href="service.html" class="active">
+				<li class="introactive">
+					<a href="service.html">
 						<div>公司服务</div>
 						<div class="english">SERVICES</div>
 					</a>
@@ -44,8 +45,11 @@
 					</a>
 				</li>
 				<li class="last">
-					<div>关于我们</div>
-					<div class="english">ABOUT US</div>
+					<a href="../index.html">
+						<div>关于我们</div>
+						<div class="english">ABOUT US</div>
+					</a>
+					
 				</li>
 			</ul>
 		</div>
@@ -83,32 +87,32 @@
 				</div>
 			</div>
 		</div>
-		<div class="services_content hide" id="services_content1">
+		<div class="services_content" id="services_content1">
 			<h1 class="services_title">services</h1>
 			<ul class="services_contentlist bounceInDown animated">
 				<li>
 					<img src="../img/serviseicon.png" class="list_icon"/>
 					<p class="list_font">业务范围</p>
 					<p class="list_fontenglist">SCOPE OF BUSINESS</p>
-					<p class="list_more">more > ></p>
+					<p class="list_more" id="yewufanwei">more > ></p>
 				</li>
 				<li>
 					<img src="../img/serviseicon.png" class="list_icon"/>
 					<p class="list_font">业务流程</p>
 					<p class="list_fontenglist">OPERATION FLOW</p>
-					<p class="list_more">more > ></p>
+					<p class="list_more" id="yewuliucheng">more > ></p>
 				</li>
 				<li>
 					<img src="../img/serviseicon.png" class="list_icon"/>
 					<p class="list_font">服务理念</p>
 					<p class="list_fontenglist">SERVICE IDEA</p>
-					<p class="list_more">more > ></p>
+					<p class="list_more" id="fuwulinian">more > ></p>
 				</li>
 				<li>
 					<img src="../img/serviseicon.png" class="list_icon"/>
 					<p class="list_font">合同下载</p>
 					<p class="list_fontenglist">DOWNLOAD THE CONTRACT</p>
-					<p class="list_more">more > ></p>
+					<p class="list_more" id="hetongxiazai">more > ></p>
 				</li>
 			</ul>
 		</div>
@@ -135,57 +139,60 @@
 				</li>
 			</ul>
 		</div>
-		<div class="services_content hide" id="services_content3">
+		<div class="services_content hide" id="services_content3" style="overflow: auto;">
 			<div class="header">
 				<h1 class="title">业务流程</h1>
 				<p class="yellow_line"></p>
 				<p class="english">operation flow</p>
 			</div>
-			<div style="width:800px;margin: 20px auto;">
+			<div id="liuchengpic" style="width:700px;margin: 20px auto;">
 				<img class="liucheng" src="../img/liucheng.png" width="100%"/>
 			</div>
-			<div style="width: 250px;height: 50px;margin: 0 auto;">
+			<div style="width: 250px;height: 50px;margin:0 auto 65px auto;">
 				<img src="../img/icon.png" style="width: 100%;height: 100%;position: relative;"/>
 			</div>
 		</div>
-		<div class="services_content introduction_content hide" id="services_content4">
+		<div class="services_content hide" id="services_content4">
 			<div class="header"> 
 				<h1 class="title">服务理念</h1>
 				<p class="yellow_line"></p>
 				<p class="english">service idea</p>
 			</div>
-			<div class="content">
+			<div class="content" id="content4font">
 				<p>心时尚文化传媒历经多年的发展，逐渐形成“空间、文化、艺术、美学、”四位一体的经营范围理念。公司近年来综合实力不断提升，形成了更为科学的项目管理模式、专业的创意服务体系和丰富的服务管理经验，以新形象和新标准，引领特色文化与时尚设计的发展方向。</p>
 				
 			</div>
-			<div style="width: 250px;height: 50px;position: absolute;bottom: 100px;left: 50%;transform: translateX(-50%);">
-				<img src="../img/icon.png" style="width: 100%;height: 100%;position: relative;"/>
+			<div style="width: 200px;position: absolute;bottom:65px;left: 50%;transform: translateX(-50%);">
+				<img src="../img/icon.png" style="width: 100%;position: relative;"/>
 			</div>
 		</div>
-		<div class="services_content introduction_content" id="services_content5">
+		<div class="services_content hide" id="services_content5" style="overflow: auto;">
 			<div class="header"> 
 				<h1 class="title">业务流程</h1>
 				<p class="yellow_line"></p>
 				<p class="english">operation flow</p>
 			</div>
-			<div class="content contents">
+			<div class="content contents" id="content5hetong">
 				<div class="down_head">
 					<img class="icon" src="../img/wenjianjia.png"/>
-					<p class="hetong" style="margin-top: 30px;"><span>下载合同</span> <img src="../img/arrow.png"/> </p>
+					<a href="../wenjian/合同.doc" download="合同.doc"><p class="hetong" style="margin-top: 30px;"><span>下载合同</span> <img src="../img/arrow.png"/> </p></a>
 				</div>
 				<div class="down_mid">
-					<div class="mid_title">文化创意产业园管理有限公司租赁合同</div>
-					<ul class="mid_info">
-						<li>甲方：</li>
-						<li>地址：</li>
-						<li>联系电话：</li>
-					</ul>
-					<p class="hetong"><span>查看合同</span><img src="../img/arrow.png"/> </p>
+					
+					<img src="../img/hetong1.png" width="100%"/>
+					<div class="hide" id="hetongpic">
+						
+						<img src="../img/hetong2.png" width="100%"/>
+						<img src="../img/hetong3.png" width="100%"/>
+						<img src="../img/hetong4.png" width="100%"/>
+						<img src="../img/hetong5.png" width="100%"/>
+					</div>
+					<p class="hetong" id="viewhetong"><span>查看合同</span><img src="../img/arrow.png" style="width: 20px;vertical-align: middle;"/> </p>
 					
 				</div>
 			</div>
-			<div style="width: 250px;height: 50px;position: absolute;bottom: 60px;left: 50%;transform: translateX(-50%);">
-				<img src="../img/icon.png" style="width: 100%;height: 100%;position: relative;"/>
+			<div style="width: 200px;margin: 0 auto 65px auto;">
+				<img src="../img/icon.png" style="width: 100%;"/>
 			</div>
 		</div>
 		<div style="margin-bottom: 3000px;"></div>

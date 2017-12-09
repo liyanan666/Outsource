@@ -14,9 +14,10 @@
 	</head>
 
 	<body>
-		<div id="header" class="index_header clearfix" style="z-index: 300;">
+		<div class="index_header clearfix" style="z-index: 200;">
 			<div class="fl logo">
-				<img src="../img/logo1.png"/>
+				<img id="logo1" src="../img/logo1.png"/>
+				<img id="logo2" src="../img/logo.png" style="display: none;"/>
 			</div>
 			<ul class="nav fr clearfix introduction_nav">
 				<li>
@@ -27,21 +28,19 @@
 					
 				</li>
 				<li>
-					<a href="introduction.html">
+					<a href="introduction.html" >
 						<div>公司简介</div>
 						<div class="english">SYNOPSIS</div>
 					</a>
-					
 				</li>
 				<li>
 					<a href="service.html">
 						<div>公司服务</div>
 						<div class="english">SERVICES</div>
 					</a>
-					
 				</li>
-				<li>
-					<a href="anli.html" class="active">
+				<li class="introactive">
+					<a href="anli.html">
 						<div>商业案例</div>
 						<div class="english">CASE</div>
 					</a>
@@ -51,6 +50,7 @@
 						<div>关于我们</div>
 						<div class="english">ABOUT US</div>
 					</a>
+					
 				</li>
 			</ul>
 		</div>

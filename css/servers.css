@@ -9,30 +9,30 @@
 .block1{
 	position: fixed;
 	right: 0;
-	width: 80px;
+	width: 65px;
 	background: #2a1046;
-	bottom: 80px;
-	top: 80px;
+	bottom: 65px;
+	top: 65px;
 }
 .block2{
 	position: fixed;
 	bottom: 0;
-	height: 80px;
+	height: 65px;
 	width: 100%;
 	background: #2a1046;
 	z-index: 2;
 }
 .block3{
 	position: fixed;
-	bottom: 80px;
-	top: 80px;
-	width: 80px;
+	bottom: 65px;
+	top: 65px;
+	width: 65px;
 	background: #2a1046;
 	z-index: 2;
 }
 .block4{
 	position: fixed;
-	height: 80px;
+	height: 65px;
 	width: 100%;
 	top: 0;
 	z-index: 100;
@@ -92,7 +92,7 @@
 	line-height: .2rem;
 }
 #dowebok .case_nav .nav_english{
-	font-size: 18px;
+	font-size: 16px;
 }
 .case_content{
 	
@@ -135,7 +135,7 @@
 }
 .services_contentlist{
 	display: flex;
-	margin: 40;
+	margin: 40px;
 }
 .services_contentlist li{
 	float: left;
@@ -143,20 +143,20 @@
 	text-align: center;
 }
 .services_contentlist li .list_icon{
-	width: 150px;
+	width: 130px;
 }
 .services_contentlist li .list_font{
-	margin-top: 30px;
+	margin-top: 25px;
 	font-size: 24px;
 	line-height: 50px;
 }
 .services_contentlist li .list_fontenglist{
-	font-size: 16px;
-	line-height: 40px;
+	font-size: 14px;
+	line-height: 30px;
 }
 .services_title{
 	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	font-size: 28px;
 	text-align: center;
 	color: #2a1046;
@@ -165,7 +165,7 @@
 	width: 150px;
 	height: 35px;
 	font-size: 16px;
-	margin: 70px auto 0 auto;
+	margin: 40px auto 0 auto;
 	border: 1px solid #2a1046;
 	line-height: 33px;
 	color: #2a1046;

@@ -8,13 +8,17 @@ $(function() {
 	var block14Width = 0;
 	var block144Width = 0;
 	var scrollFunc = function(e) {
+		
 		if(document.body.clientHeight + document.body.scrollTop >= document.documentElement.offsetHeight ){
 			return;
 		}
 		e = e || window.event;
 		if(e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件 
-			console.log(1)
+			
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
+				if($("#services_content5").scrollTop()>0){
+					return;
+				}
 				if(block144Width>0 && block133Height>0 && block122Width>0){
 					block144Width -= 100;
 					$("#block444").css({"height":"100%","background":"#2a1046","width":block144Width+"px"});
@@ -24,23 +28,43 @@ $(function() {
 				}else if(block122Width>0 && block133Height<=0){
 					block122Width -= 100;
 					$("#block222").css({"height":"100%","background":"#2a1046","width":block122Width+"px"});
+				}else if(block11Height>0 && block12Width>0 && block13Height>0 && block14Width>0 && block111Height>0){
+					block111Height-=100;
+					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"});
 				}else if(block11Height>0 && block12Width<=0 && block13Height<=0 && block14Width<=0){
 					block11Height -= 100;
+					$("#services_content1").show().find("ul").addClass("bounceInDown animated");
+					$("#services_content2,#services_content3,#services_content4,#services_content5").hide();
+				
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height >=$(".block1").height() && block13Height<=0 && block14Width<=0 && block12Width>=0 ){
 					
 					block12Width-=100;
+					if(block12Width<$(".block2").width()/2){
+						$("#services_content1,#services_content3,#services_content4,#services_content5").hide();
+						$("#services_content2").show().find("ul").addClass("bounceInDown animated");
+						
+					}
 					$("#block22").css({"height":"100%","background":"#fbee4e","width":block12Width+"px"})
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=0 && block14Width<=0 ){
 				
 					block13Height-=100;
+					if(block13Height<$(".block3").height()/3){
+						$("#services_content1,#services_content2,#services_content4,#services_content5").hide();
+						
+						$("#services_content3").show().find("#liuchengpic").addClass("bounceInDown animated");
+					}
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
-				}else if(block11Height>0 && block12Width>0 && block13Height>0 && block14Width>0 && block111Height>0){
-					block111Height-=100;
-					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"});
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
 					
 					block14Width-=100;
+					if(block14Width<$(".block4").width()/4){
+						$("#logo1").show();
+						$("#logo2").hide();
+						$("#services_content1,#services_content2,#services_content3,#services_content5").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content4").show().find("#content4font").addClass("bounceInDown animated");
+						
+					}
 					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}
 			}
@@ -61,12 +85,26 @@ $(function() {
 					}else{
 						block12Width += 100;
 					}
+					if(block12Width>$(".block2").width()/2){
+						$("#services_content1").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content2").show().find("ul").addClass("bounceInDown animated");
+						$("#services_content3").hide();
+						$("#services_content4").hide();
+						$("#services_content5").hide();
+					}
 					$("#block22").css({"height":"100%","background":"#fbee4e","width":block12Width+"px"})
 				}else if(block12Width==$(".block2").width() && block13Height<$(".block3").height()){
 					if($(".block3").height()-block13Height<100){
 						block13Height = $(".block3").height();
 					}else{
 						block13Height += 100;
+					}
+					if(block13Height>$(".block3").height()/3){
+						$("#services_content1").hide();
+						$("#services_content4").hide();
+						$("#services_content5").hide();
+						$("#services_content2").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content3").show().find("#liuchengpic").addClass("bounceInDown animated");
 					}
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block13Height==$(".block3").height() && block14Width<$(".block4").width()){
@@ -75,12 +113,29 @@ $(function() {
 					}else{
 						block14Width += 100;
 					}
+					$("#logo1").hide();
+					$("#logo2").show();
+					if(block14Width>$(".block4").width()/3){
+						$("#services_content1").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content4").show().find("#content4font").addClass("bounceInDown animated");
+						$("#services_content2").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content3").hide().find("#liuchengpic").removeClass("bounceInDown animated");
+						$("#services_content5").hide();
+					}
 					$("#block44").css({"height":"100%","background":"#fbee4e","width":block14Width+"px"})
 				}else if(block14Width==$(".block4").width() && block111Height<$("#block11").height()){
 					if($("#block11").height()-block111Height<100){
 						block111Height = $("#block11").height();
 					}else{
 						block111Height += 100;
+					}
+					
+					if(block111Height>0){
+						$("#services_content1").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content4").hide().find("#content4font").removeClass("bounceInDown animated");
+						$("#services_content2").hide().find("ul").removeClass("bounceInDown animated");
+						$("#services_content3").hide().find("#liuchengpic").removeClass("bounceInDown animated");
+						$("#services_content5").show().find("#content5hetong").addClass("bounceInDown animated");
 					}
 					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"})
 				}else if(block111Height == $("#block11").height() && block122Width<$("#block22").width()){
@@ -115,7 +170,6 @@ $(function() {
 		}
 	}
 	
-
 	//给页面绑定滑轮滚动事件
 	if(document.addEventListener) { //firefox
 		document.addEventListener('DOMMouseScroll', scrollFunc, false);
@@ -123,7 +177,20 @@ $(function() {
 	//滚动滑轮触发scrollFunc方法 //ie 谷歌
 	window.onmousewheel = document.onmousewheel = scrollFunc;
 	
+	$("#viewhetong").click(function(){
+		if($("#hetongpic").css("display") == "none"){
+			$(".down_mid").css({"overflow":"atuo","height":"auto"});
+		}else{
+			$(".down_mid").css({"overflow":"hidden","height":"229px"});
+		}
+		$("#hetongpic").slideToggle();
+		
+		
+	});
 	
-	
-
+	function showsecond1(){
+		$("#services_content1").show().find("ul").addClass("bounceInDown animated");
+		$("#services_content2,#services_content3,#services_content4,#services_content5").hide();
+				
+	}
 });
