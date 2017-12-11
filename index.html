@@ -135,6 +135,40 @@
 		<script src="swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="swiper/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var imgindex = 0;
+			var iLength = 0; 
+			var loaddiv = $(".loadimg").find(".load_font") || "";
+			var loadlength = $(".loadimg").find(".load_font").length;
+			var timer = setInterval(function(){
+				imgindex++;
+				if(imgindex >=loadlength){
+					imgindex=0;
+				}
+				loaddiv.eq(imgindex).show().siblings("div").hide();
+			},1000);
+			loadImages();
+			function loadImages(){  
+			    var aUrl=["http://www.yijiakeji-china.com/rfcc/img/shouye-4.png","http://www.yijiakeji-china.com/rfcc/img/shouye-2.png","http://www.yijiakeji-china.com/rfcc/img/shouye-3.png","http://www.yijiakeji-china.com/rfcc/img/shouye-1.png"];
+				for(var i=0;i<aUrl.length;i++)
+				{
+					var oImg=new Image();
+					oImg.onload=function()
+					{
+						iLength++;
+						if(iLength==aUrl.length)
+						{
+							clearInterval(timer);
+							$(".loadimg").addClass("fadeOutLeft animated");
+						}
+					};
+					
+					oImg.src=aUrl[i];
+				}
+		
+			}  
+    
+		</script>
 	</body>
 
 </html>
