@@ -152,5 +152,6 @@ $(function() {
 	if(host == '#info'){
 		$(".case_nav").find("li").eq(1).trigger("click");
 	}
-
+	
+	
 });
