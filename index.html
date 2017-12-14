@@ -8,18 +8,28 @@
 		<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="swiper/animate.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/load5.css"/>
 		<script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 		<div class="loadimg">
+			<div class="loadEffect">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <span></span>
+			</div>
+
 			<div class="load_font">A</div>
-			<div class="load_font hide">B</div>
-			<div class="load_font hide">C</div>
-			<div class="load_font hide">D</div>
-			<div class="load_font hide">E</div>
 			<div class="load_font hide">F</div>
+			<div class="load_font hide">C</div>
+			<div class="load_font hide">C</div>
 		</div>
 		<div class="index_header clearfix">
 			<div class="fl logo">
@@ -66,7 +76,7 @@
 					<div class="bg yellow fl"></div>
 					<div class="bg fl"></div>
 					<div class="section1_font">
-						<img src="img/font.png"/>
+						<img src="img/afcc.png"/>
 						
 					</div>
 					<div class="section_content">
@@ -76,6 +86,10 @@
 				<div class="swiper-slide clearfix">
 					<div class="bg fl"></div>
 					<div class="bg blue fl"></div>
+					<div class="section1_font">
+						<img src="img/afcc.png"/>
+						
+					</div>
 					<div class="section_content">
 						<img src="img/shouye-2.png"/>
 						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
@@ -88,6 +102,9 @@
 				<div class="swiper-slide clearfix">
 					<div class="bg yellow fl"></div>
 					<div class="bg fl"></div>
+					<div class="section1_font">
+						<img src="img/afcc.png"/>
+					</div>
 					<div class="section_content">
 						<img src="img/shouye-3.png"/>
 						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
@@ -100,6 +117,9 @@
 				<div class="swiper-slide clearfix">
 					<div class="bg fl"></div>
 					<div class="bg blue fl"></div>
+					<div class="section1_font">
+						<img src="img/afcc.png"/>
+					</div>
 					<div class="section_content">
 						<img src="img/shouye-4.png"/>
 						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
@@ -136,37 +156,37 @@
 		<script src="swiper/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			var imgindex = 0;
-			var iLength = 0; 
-			var loaddiv = $(".loadimg").find(".load_font") || "";
-			var loadlength = $(".loadimg").find(".load_font").length;
-			var timer = setInterval(function(){
-				imgindex++;
-				if(imgindex >=loadlength){
-					imgindex=0;
-				}
-				loaddiv.eq(imgindex).show().siblings("div").hide();
-			},1000);
-			loadImages();
-			function loadImages(){  
-			    var aUrl=["http://www.yijiakeji-china.com/rfcc/img/shouye-4.png","http://www.yijiakeji-china.com/rfcc/img/shouye-2.png","http://www.yijiakeji-china.com/rfcc/img/shouye-3.png","http://www.yijiakeji-china.com/rfcc/img/shouye-1.png"];
-				for(var i=0;i<aUrl.length;i++)
-				{
-					var oImg=new Image();
-					oImg.onload=function()
-					{
-						iLength++;
-						if(iLength==aUrl.length)
-						{
-							clearInterval(timer);
-							$(".loadimg").addClass("fadeOutLeft animated");
-						}
-					};
-					
-					oImg.src=aUrl[i];
-				}
-		
-			}  
+//			var imgindex = 0;
+//			var iLength = 0; 
+//			var loaddiv = $(".loadimg").find(".load_font") || "";
+//			var loadlength = $(".loadimg").find(".load_font").length;
+//			var timer = setInterval(function(){
+//				imgindex++;
+//				if(imgindex >=loadlength){
+//					imgindex=0;
+//				}
+//				loaddiv.eq(imgindex).show().siblings("div").hide();
+//			},1000);
+//			loadImages();
+//			function loadImages(){  
+//			    var aUrl=["http://www.yijiakeji-china.com/rfcc/img/shouye-4.png","http://www.yijiakeji-china.com/rfcc/img/shouye-2.png","http://www.yijiakeji-china.com/rfcc/img/shouye-3.png","http://www.yijiakeji-china.com/rfcc/img/shouye-1.png"];
+//				for(var i=0;i<aUrl.length;i++)
+//				{
+//					var oImg=new Image();
+//					oImg.onload=function()
+//					{
+//						iLength++;
+//						if(iLength==aUrl.length)
+//						{
+//							clearInterval(timer);
+//							$(".loadimg").addClass("fadeOutLeft animated");
+//						}
+//					};
+//					
+//					oImg.src=aUrl[i];
+//				}
+//		
+//			}  
     
 		</script>
 	</body>

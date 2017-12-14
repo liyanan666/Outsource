@@ -11,10 +11,10 @@ body{
 	align-items: center;
 	justify-content: center;
 }
+
 .loadimg .load_font{
 	font-size: 500px;
 	color: #fff;
-	
 	font-family: "微软雅黑";
 }
 .bg{
@@ -39,16 +39,17 @@ body{
 }
 .logo{
 	z-index: 200;
-	margin-left: 80px;
+	margin-left: 65px;
 	position: relative;
 }
 
 .nav{
 	position: absolute;
-    right: .4rem;
+    right: 65px;
     font-size: 18px;
     color: #aaaaaa;
     z-index: 200;
+    letter-spacing: 2px;
 }
 .nav .active{
 	border-bottom: 3px solid #2a1046;
@@ -65,6 +66,7 @@ body{
     height: 65px;
     display: flex;
     align-items: center;
+    
 }
 .nav li a{
 	color: #aaaaaa;
@@ -139,7 +141,7 @@ body{
 .section1_font{
 	position: absolute;
 	top: 45%;
-	left: 2%;
+	left: 10px;
 }
 .more{
 	width: .7rem;
@@ -161,6 +163,7 @@ body{
 	width: 80%;
 	height: 130px;
 }
+
 .oinput{
 	position: absolute;
     width: 80%;
@@ -177,6 +180,14 @@ body{
 	border: none;
 	outline: none;
 	
+}
+@media screen and (max-height: 600px) {
+    .oinput {
+        height: 280px;
+    }
+    .oinput textarea{
+    	height: 240px;
+    }
 }
 .bottom .left{
 	display: inline-block;
@@ -200,8 +211,12 @@ body{
 	width: 15px;
     height: 15px;
 }
+.swiper-pagination-bullet{
+	background: #ddd !important;
+}
+
 .swiper-pagination-bullet-active{
-	background: #faec5c;
+	background: #faec5c !important;
 }
 .qidai{
 	font-family: "微软雅黑";
@@ -310,4 +325,5 @@ body{
 .services_content .content p{
 	font-size:20px ;
 	line-height: 35px;
+	color: #2a1046;
 }
