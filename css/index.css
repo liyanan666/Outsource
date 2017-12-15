@@ -71,11 +71,12 @@ body{
 .nav li a{
 	color: #aaaaaa;
 }
-.nav li:hover{
-	color: #2a1046;
+
+.index_nav a:hover{
+	color: #2a1046 ;
 }
-.index_nav a:hover,.index_nav .active{
-	color: #2a1046 !important;
+.index_nav .active{
+	color: #2a1046;
 }
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
 	margin: 20px;
@@ -243,6 +244,7 @@ body{
 .header{
 	margin-top: 50px;
 	text-align: center;
+	color: #2A1046;
 }
 .header .title{
 	font-size: 30px;
