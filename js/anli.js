@@ -14,10 +14,19 @@ $(function() {
 		}
 		e = e || window.event;
 		if(e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件 
-			console.log(1)
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
 				if(block144Width>0 && block133Height>0 && block122Width>0){
 					block144Width -= 55;
+					$(".introduction_nav .introactive a").css("color","#2A1046");
+					$(".introduction_nav .introactive").css("border-bottom","3px solid #2A1046");
+					$(".introduction_nav a").hover(function(){
+						$(this).css("color","#2A1046");
+					},function(){
+						if($(this).parent().hasClass("introactive")){
+							return;
+						}
+						$(this).css("color","#aaa");
+					});
 					if(block144Width<111){
 						$("#logo1").hide();
 						$("#logo2").show();
@@ -31,6 +40,9 @@ $(function() {
 					$("#block222").css({"height":"100%","background":"#2a1046","width":block122Width+"px"});
 				}else if(block11Height>0 && block12Width<=0 && block13Height<=0 && block14Width<=0){
 					block11Height -= 55;
+					if(block11Height<55){
+						$("#blockfontright").attr("src","../img/logo1.png");
+					}
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height >=$(".block1").height() && block13Height<=0 && block14Width<=0 && block12Width>=0 ){
 					
@@ -39,9 +51,13 @@ $(function() {
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=0 && block14Width<=0 ){
 				
 					block13Height-=55;
+					$("#blockfontleft").attr("src","../img/logo1.png");
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height>0 && block12Width>0 && block13Height>0 && block14Width>0 && block111Height>0){
 					block111Height-=55;
+					if(block111Height<100){
+						$("#blockfontright").attr("src","../img/logo.png");
+					}
 					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"});
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
 					
@@ -66,15 +82,16 @@ $(function() {
 				}
 			}
 			if(e.wheelDelta < 0) { //当滑轮向下滚动时
-				
+				console.log("xia");
 				if(block11Height <$(".block1").height() && block12Width<$(".block2").width()){
 //					console.log(block11Height,$(".block1").height())
-					console.log("xia");	
+					$("#blockfontright").attr("src","../img/logo.png");
 					if($(".block1").height()-block11Height<55){
 						block11Height = $(".block1").height();
 					}else{
 						block11Height += 55;
 					}
+					console.log(123)
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"});
 				}else if(block11Height ==$(".block1").height() && block12Width<$(".block2").width()){
 					if($(".block2").width()-block12Width<55){
@@ -88,6 +105,9 @@ $(function() {
 						block13Height = $(".block3").height();
 					}else{
 						block13Height += 55;
+					}
+					if($(".block3").height()-block13Height<300){
+						$("#blockfontleft").attr("src","../img/logo.png");
 					}
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block13Height==$(".block3").height() && block14Width<$(".block4").width()){
@@ -117,6 +137,7 @@ $(function() {
 					}else{
 						block111Height += 55;
 					}
+					$("#blockfontright").attr("src","../img/logo1.png");
 					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"})
 				}else if(block111Height == $("#block11").height() && block122Width<$("#block22").width()){
 					if($("#block22").width()-block122Width<55){
@@ -126,6 +147,9 @@ $(function() {
 					}
 					$("#block222").css({"height":"100%","background":"#2a1046","width":block122Width+"px"})
 				}else if(block122Width == $("#block222").width() && block133Height<$("#block33").height()){
+					if($("#block33").height()-block133Height<300){
+						$("#blockfontleft").attr("src","../img/logo1.png");
+					}
 					if($("#block33").height()-block133Height<55){
 						block133Height = $("#block33").height();
 					}else{

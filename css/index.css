@@ -1,5 +1,9 @@
 body{
-	min-width: 1200px;
+	height: 100%;
+}
+@font-face {
+	font-family:pristina;
+	src: url('../font/pristina.ttf');
 }
 .loadimg{
 	position: fixed;
@@ -96,6 +100,7 @@ body{
 	color: #fbee4e;
 	
 }
+
 .nav li .english{
 	font-size: 12px;
 }
@@ -142,7 +147,11 @@ body{
 .section1_font{
 	position: absolute;
 	top: 45%;
-	left: 10px;
+	color: #2A1046;
+	font-size: .2rem;
+	left: 15px;
+	transform: rotate(-90deg);
+	font-family: pristina;
 }
 .more{
 	width: .7rem;
@@ -168,7 +177,6 @@ body{
 .oinput{
 	position: absolute;
     width: 80%;
-    height: 350px;
     left: 10%;
     bottom: 200px;
     border: 1px solid #2a1046;
@@ -176,19 +184,45 @@ body{
 .oinput textarea{
 	width: 100%;
 	font-size: 16px;
-	height: 300px;
 	text-indent: 20px;
 	border: none;
 	outline: none;
 	
 }
-@media screen and (max-height: 600px) {
-    .oinput {
+@media screen and (max-height:800px) {
+	.yewuliuchengpic{
+		width:500px;
+		margin: 20px auto;
+	}
+	.oinput {
         height: 280px;
     }
     .oinput textarea{
     	height: 240px;
     }
+    .intro_bottom{
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-height:810px) {
+	.yewuliuchengpic{
+		width:700px;
+		margin: 20px auto;
+	}
+	.oinput {
+        height: 350px;
+    }
+    .oinput textarea{
+    	height: 300px;
+    }
+    .intro_bottom{
+		width: 200px;
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 .bottom .left{
 	display: inline-block;
@@ -329,3 +363,5 @@ body{
 	line-height: 35px;
 	color: #2a1046;
 }
+
+
