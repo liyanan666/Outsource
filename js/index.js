@@ -54,7 +54,7 @@ window.onload=function(){
     	swiper.slideTo(5, 1000, false);
     }
     
-   
+
    
 }
   
