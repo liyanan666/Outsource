@@ -20,7 +20,14 @@ window.onload=function(){
 	      }, 
 	      slideChangeTransitionEnd: function(){ 
 	        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-	        if(swiper.activeIndex == 1 || swiper.activeIndex == 3){
+	        if(swiper.activeIndex == 1 || swiper.activeIndex == 3 || swiper.activeIndex == 4){
+	        	if(swiper.activeIndex == 4){
+	        		$(".logo").find("img").eq(0).attr("src","img/logo1.png");
+	        		$(".logo").find("img").eq(1).attr("src","img/shouye-wenzhilogo1.png");
+	        	}else{
+	        		$(".logo").find("img").eq(0).attr("src","img/logo.png");
+	        		$(".logo").find("img").eq(1).attr("src","img/shouye-wenzhilogo.png");
+	        	}
 	        	console.log(1);
 	        	$(".index_nav a").mouseover(function(){
 	        		$(this).css("color","#fbee4e");

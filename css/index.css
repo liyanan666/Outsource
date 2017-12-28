@@ -45,6 +45,8 @@ body{
 	z-index: 200;
 	margin-left: 65px;
 	position: relative;
+	display: flex;
+    align-items: center;
 }
 
 .nav{
@@ -127,7 +129,18 @@ body{
 	top: 29%;
 	left: .2rem;
 	line-height: 70px;
+	width: 50%;
 	position: absolute;
+}
+.section_content .section3{
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	
+}
+.section_header{
+	height: 65px;
+	background: #2A1046;
 }
 .section_content p{
 	font-size: 35px;
@@ -177,8 +190,8 @@ body{
 
 .oinput{
 	position: absolute;
-    width: 80%;
-    left: 10%;
+    width: 70%;
+    left: 15%;
     bottom: 200px;
     border: 1px solid #2a1046;
 }
