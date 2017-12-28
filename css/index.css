@@ -45,11 +45,8 @@ body{
 	z-index: 200;
 	margin-left: 65px;
 	position: relative;
-<<<<<<< HEAD
 	display: flex;
     align-items: center;
-=======
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 }
 
 .nav{
@@ -108,10 +105,7 @@ body{
 
 .nav li .english{
 	font-size: 12px;
-<<<<<<< HEAD
 	margin-top: 5px;
-=======
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 }
 .nav .last{
 	margin-right: 0;
@@ -135,7 +129,6 @@ body{
 	top: 29%;
 	left: .2rem;
 	line-height: 70px;
-<<<<<<< HEAD
 	width: 50%;
 	position: absolute;
 }
@@ -149,10 +142,6 @@ body{
 	height: 65px;
 	background: #2A1046;
 }
-=======
-	position: absolute;
-}
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 .section_content p{
 	font-size: 35px;
 	color: #fff;
@@ -173,11 +162,7 @@ body{
 	position: absolute;
 	top: 45%;
 	color: #2A1046;
-<<<<<<< HEAD
 	font-size: 30px;
-=======
-	font-size: .2rem;
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 	left: 15px;
 	transform: rotate(-90deg);
 	font-family: pristina;
@@ -205,13 +190,8 @@ body{
 
 .oinput{
 	position: absolute;
-<<<<<<< HEAD
     width: 70%;
     left: 15%;
-=======
-    width: 80%;
-    left: 10%;
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
     bottom: 200px;
     border: 1px solid #2a1046;
 }
@@ -330,12 +310,9 @@ body{
 .introduction_content .content{
 	margin: 50px 80px 50px 80px;
 }
-<<<<<<< HEAD
 .indent{
 	text-indent: 45px;
 }
-=======
->>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 .contents{
 	text-align: center;
 	width: 700px;
