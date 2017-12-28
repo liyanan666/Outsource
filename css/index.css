@@ -310,6 +310,9 @@ body{
 .introduction_content .content{
 	margin: 50px 80px 50px 80px;
 }
+.indent{
+	text-indent: 45px;
+}
 .contents{
 	text-align: center;
 	width: 700px;
