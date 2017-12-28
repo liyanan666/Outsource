@@ -14,7 +14,6 @@ $(function() {
 		}
 		e = e || window.event;
 		if(e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件 
-			console.log(1)
 			if(e.wheelDelta > 0) { //当滑轮向上滚动时
 				if(block144Width>0 && block133Height>0 && block122Width>0){
 					block144Width -= 55;
@@ -42,7 +41,11 @@ $(function() {
 				}else if(block11Height>0 && block12Width<=0 && block13Height<=0 && block14Width<=0){
 					block11Height -= 55;
 					if(block11Height<55){
+<<<<<<< HEAD
 						$("#blockfontright").css("color","#FBEE4E");
+=======
+						$("#blockfontright").attr("src","../img/logo1.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					}
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height >=$(".block1").height() && block13Height<=0 && block14Width<=0 && block12Width>=0 ){
@@ -52,12 +55,20 @@ $(function() {
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=0 && block14Width<=0 ){
 				
 					block13Height-=55;
+<<<<<<< HEAD
 					$("#blockfontleft").css("color","#FBEE4E");
+=======
+					$("#blockfontleft").attr("src","../img/logo1.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block11Height>0 && block12Width>0 && block13Height>0 && block14Width>0 && block111Height>0){
 					block111Height-=55;
 					if(block111Height<100){
+<<<<<<< HEAD
 						$("#blockfontright").css("color","#2A1046");
+=======
+						$("#blockfontright").attr("src","../img/logo.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					}
 					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"});
 				}else if(block11Height >=$(".block1").height() &&block12Width>=$(".block2").width() && block13Height>=$(".block3").height() && block14Width>=0){
@@ -83,17 +94,26 @@ $(function() {
 				}
 			}
 			if(e.wheelDelta < 0) { //当滑轮向下滚动时
-				
+				console.log("xia");
 				if(block11Height <$(".block1").height() && block12Width<$(".block2").width()){
+<<<<<<< HEAD
 					
+=======
+//					console.log(block11Height,$(".block1").height())
+					$("#blockfontright").attr("src","../img/logo.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					if($(".block1").height()-block11Height<55){
 						block11Height = $(".block1").height();
 					}else{
 						block11Height += 55;
 					}
+<<<<<<< HEAD
 					if($(".block1").height()-block11Height<400){
 						$("#blockfontright").css("color","#2A1046");
 					}
+=======
+					console.log(123)
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					$("#block11").css({"height":block11Height+"px","background":"#fbee4e","width":"100%"});
 				}else if(block11Height ==$(".block1").height() && block12Width<$(".block2").width()){
 					if($(".block2").width()-block12Width<55){
@@ -109,7 +129,11 @@ $(function() {
 						block13Height += 55;
 					}
 					if($(".block3").height()-block13Height<300){
+<<<<<<< HEAD
 						$("#blockfontleft").css("color","#2A1046");
+=======
+						$("#blockfontleft").attr("src","../img/logo.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					}
 					$("#block33").css({"height":block13Height+"px","background":"#fbee4e","width":"100%"})
 				}else if(block13Height==$(".block3").height() && block14Width<$(".block4").width()){
@@ -139,7 +163,11 @@ $(function() {
 					}else{
 						block111Height += 55;
 					}
+<<<<<<< HEAD
 					$("#blockfontright").css("color","#FBEE4E");
+=======
+					$("#blockfontright").attr("src","../img/logo1.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					$("#block111").css({"width":"100%","background":"#2a1046","height":block111Height+"px"})
 				}else if(block111Height == $("#block11").height() && block122Width<$("#block22").width()){
 					if($("#block22").width()-block122Width<55){
@@ -150,7 +178,11 @@ $(function() {
 					$("#block222").css({"height":"100%","background":"#2a1046","width":block122Width+"px"})
 				}else if(block122Width == $("#block222").width() && block133Height<$("#block33").height()){
 					if($("#block33").height()-block133Height<300){
+<<<<<<< HEAD
 						$("#blockfontleft").css("color","#FBEE4E");
+=======
+						$("#blockfontleft").attr("src","../img/logo1.png");
+>>>>>>> 8d883bd7fe4a6afe469d5e71214bef1584ac55cf
 					}
 					if($("#block33").height()-block133Height<55){
 						block133Height = $("#block33").height();
