@@ -228,12 +228,13 @@ $(function() {
 	
 	
 	$("#viewhetong").click(function(){
-		if($("#hetongpic").css("display") == "none"){
-			$(".down_mid").css({"overflow":"atuo","height":"auto"});
-		}else{
-			$(".down_mid").css({"overflow":"hidden","height":"229px"});
-		}
-		$("#hetongpic").slideToggle();
+//		if($("#hetongpic").css("display") == "none"){
+//			$(".down_mid").css({"overflow":"atuo","height":"auto"});
+//		}else{
+//			$(".down_mid").css({"overflow":"hidden","height":"229px"});
+//		}
+//		$("#hetongpic").slideToggle();
+		window.location.href= "reviewcontract.html";
 		
 		
 	});

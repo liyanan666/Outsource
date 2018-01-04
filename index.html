@@ -80,7 +80,10 @@
 						
 					</div>
 					<div class="section_content">
-						<img src="img/shouye-1.jpg"/>
+						<!--<div class="section_pic pic1"></div>-->
+						<img class="pic1" src="img/pic-one-1024.jpg"/>
+						<img class="pic2" src="img/pic-one-1280.jpg"/>
+						<img class="pic3" src="img/pic-one-1440.jpg"/>
 					</div>
 				</div>
 				<div class="swiper-slide clearfix">
@@ -91,7 +94,9 @@
 						
 					</div>
 					<div class="section_content">
-						<img src="img/changebanner.png"/>
+						<img class="pic1" src="img/pic-two-1024.jpg"/>
+						<img class="pic2" src="img/pic-two-1280.jpg"/>
+						<img class="pic3" src="img/pic-two-1440.jpg"/>
 						<div class="ani section3" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
 						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
 							<p >视觉传达设计</p>
@@ -107,9 +112,11 @@
 						afcc
 					</div>
 					<div class="section_content">
-						<img src="img/shouye-3.png"/>
-						<div class="ani section3" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
-						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<img class="pic1" src="img/pic-three-1024.jpg"/>
+						<img class="pic2" src="img/pic-three-1280.jpg"/>
+						<img class="pic3" src="img/pic-three-1440.jpg"/>
+						<div class="ani section3 posright" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+						<div class="ani section2 posright" style="width: 45%;" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
 							<p>动画设计以及影视后期制作</p>
 							<p style="word-wrap: break-word;">Animation design and film post production</p>
 							<a href="html/anli.html#animate"><p class="more" >more > ></p></a>
@@ -124,7 +131,9 @@
 					</div>
 					<div class="section_content" style="background: #21201f;display: flex;align-items: center;">
 						
-						<img src="img/shouye-4.png"/>
+						<img class="pic1" src="img/pic-four-1024.jpg"/>
+						<img class="pic2" src="img/pic-four-1280.jpg"/>
+						<img class="pic3" src="img/pic-four-1440.jpg"/>
 						<div class="ani section3" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
 						<div class="ani section2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
 							<p>信息可视化设计</p>
@@ -174,7 +183,14 @@
 			},1500);
 			loadImages();
 			function loadImages(){  
-			    var aUrl=["http://www.yijiakeji-china.com/rfcc/img/shouye-4.png","http://www.yijiakeji-china.com/rfcc/img/changebanner.png","http://www.yijiakeji-china.com/rfcc/img/shouye-3.png","http://www.yijiakeji-china.com/rfcc/img/shouye-1.png"];
+			    var aUrl=[
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-one-1024.jpg",
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-one-1280.jpg",
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-one-1440.jpg",
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-two-1024.jpg",
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-two-1280.jpg",
+			    "http://www.yijiakeji-china.com/rfcc/img/pic-two-1440.jpg"
+			    ];
 				for(var i=0;i<aUrl.length;i++)
 				{
 					var oImg=new Image();

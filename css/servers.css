@@ -74,7 +74,10 @@
 #dowebok{
 	background: #fff;
 	z-index: 101;
-	margin: .6rem .8rem;
+	padding: .3rem .8rem;
+	position: relative;
+	margin-top: 65px;
+	
 }
 
 #dowebok .section{
@@ -127,6 +130,7 @@
 .content_list{
 	margin: 0 0 .2rem 0;
 }
+
 .content_list li{
 	width: 270px;
 	height: 350px;
@@ -135,6 +139,20 @@
 	margin-top: .2rem;
 	position: relative;
 }
+@media only screen and (min-width:1366px ) {
+	.content_list li{
+		width: 270px;
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width:1365px ) {
+	.content_list li{
+		width: 240px;
+		height: 312px;
+	}
+}
+
 
 .content_list li img{
 	width: 100%;
@@ -247,3 +265,4 @@
 .services_content .liucheng{
 	margin: 0 auto;
 }
+

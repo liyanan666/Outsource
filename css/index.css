@@ -118,7 +118,47 @@ body{
 	bottom: 65px;
 	position: absolute;
 }
+.section_content .section_pic{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: contain !important;
+}
 
+@media (max-width: 1280px){ 
+	.section_content .pic1{
+		display: block;
+	}
+	.section_content .pic2,.section_content .pic3{
+		display: none;
+	}
+}
+
+@media (min-width: 1366px) {
+		
+	.section_content .pic2{
+		display: block;
+	}
+	.section_content .pic1,.section_content .pic3{
+		display: none;
+	}
+}  
+
+
+@media (min-width: 1680px) {
+	.section_content .pic3{
+		display: block;
+	}
+	.section_content .pic1,.section_content .pic2{
+		display: none;
+	}
+} 
+
+.posright{
+	position: absolute;
+	left: auto !important;
+	right: 0 !important;
+}
 
 .section_content img{
 	width: 100%;
@@ -135,7 +175,7 @@ body{
 .section_content .section3{
 	width: 50%;
 	height: 100%;
-	background: rgba(0,0,0,.3);
+	background: rgba(0,0,0,.5);
 	
 }
 .section_header{
@@ -310,6 +350,18 @@ body{
 .introduction_content .content{
 	margin: 50px 80px 50px 80px;
 }
+@media only screen and (min-width:1366px ) {
+	.fontcontent{
+		width: 1200px;margin: 50px auto;
+	}
+}
+
+@media only screen and (max-width:1365px ) {
+	.fontcontent{
+		width: 900px;margin: 50px auto;
+	}
+}
+
 .indent{
 	text-indent: 45px;
 }
@@ -360,7 +412,7 @@ body{
 	width: 20px;
 	vertical-align: middle;
 }
-.introduction_content .content p{
+.introduction_content .content p,.fontcontent p{
 	font-size: 22px !important;
 	line-height: 35px;
 }

@@ -59,6 +59,18 @@ window.onload=function(){
     });
     if(host == '#aboutus'){
     	swiper.slideTo(5, 1000, false);
+    	$(".logo").find("img").eq(0).attr("src","img/logo1.png");
+    	$(".index_nav a").mouseover(function(){
+    		$(this).css("color","#fbee4e");
+    	});
+    	$(".index_nav a").mouseout(function(){
+    		if($(this).parent().hasClass("active")){
+    			return;
+    		}
+    		$(this).css("color","#aaa");
+    	});
+    	$("#active a").css("color","#fbee4e");
+    	$("#active").css("border-bottom","3px solid #fbee4e");
     }
     
 
