@@ -71,6 +71,14 @@ $(function(){
 			anli1:['movie1_1.png','movie1_2.png','movie1_3.png','movie1_4.png','movie1_5.png','movie1_6.png'],
 			anli2:['movie2_1.png','movie2_2.png','movie2_3.png','movie2_4.png','movie2_5.png'],
 			anli3:['movie3_1.png','movie3_2.png','movie3_3.png','movie3_4.png','movie3_5.png','movie3_6.png','movie3_7.png']
+		},
+		culture:{
+			title:"文化设计",
+			titleEngilsh:"CREATIVE DESIGN",
+			anli1:['design1_1.png','design1_2.png','design1_3.png'],
+			anli2:['design2_1.png','design2_2.png'],
+			anli3:['design3_1.png','design3_2.png'],
+			anli4:['design4_1.png','design4_2.png','design4_3.png','design4_4.png','design4_5.png']
 		}
 	}
 	
